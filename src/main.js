@@ -21,9 +21,22 @@ convertirAString(numero) {
     return s;
 
 }
+obtenerDivisibles(numero){
+    let i = numero;
+
+    do{
+        if(numero%i===0){
+            divisibles = divisibles + 1;
+        }
+        i = i -1;
+    }while(i>0)
+    return divisibles;
+}
 }
 let app = new App();
 
 console.log(app.factorial(5));
 
 console.log(app.convertirAString(6));
+
+console.log(obtenerDivisibles(5));
